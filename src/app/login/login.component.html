@@ -1,0 +1,8 @@
+<form [formGroup]="loginForm">
+    User Name: <input type="text" name="" id="" formControlName="username" class="form-control">    
+    Password: <input type="password" name="" id="" formControlName="password" class="form-control">
+    <br>
+    <input type="button" value="Login" class="btn btn-success" (click)="fnAuthenticate()">
+</form>
+<br>
+<div *ngIf="status" class="alert alert-danger">{{status}}</div>
